@@ -30,9 +30,10 @@
             </div>
           </div>
           <div class="divider"></div>
-          <div class="flex gap-5">
+          <div class="flex gap-4">
             <button id="send_money" class="btn btn-outline btn-primary text-[18px]">Send Money</button>
             <button id="cash_out" class="btn btn-outline btn-secondary text-[18px]">Cash Out</button>
+            <button id="transection_button" class="btn btn-outline btn-warning text-[18px]">Transection</button>
           </div>
           <br>
 
@@ -40,7 +41,7 @@
 
           <!-- add money form start -->
 
-          <div id="add_money_form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <div id="add_money_form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
             <form class="card-body">
               <div class="form-control">
                 <label class="label">
@@ -64,7 +65,7 @@
           <!-- add money form end -->
 
           <!-- cash out form start -->
-          <div id="cash_out_form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <div id="cash_out_form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
             <form class="card-body">
               <div class="form-control">
                 <label class="label">
@@ -86,6 +87,16 @@
             </form>
           </div>
           <!-- cash out form end -->
+
+          <!-- transection id section -->
+
+          <div id="transection" class="hidden">
+            <h1 class="text-3xl text-black">Transection Text</h1>
+            <div id="transection_container">
+
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -96,6 +107,7 @@
   <script src="./JS/utilities.js"></script>
   <script src="./JS/addMoney.js"></script>
   <script src="./JS/cashOut.js"></script>
+  <script src="./JS/features.js"></script>
 </body>
 
 </html>
