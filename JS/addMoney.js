@@ -11,12 +11,12 @@ document.getElementById ('send_money_btn').addEventListener ('click', function (
         const  balance = getTextFieldValueByid ('account_balance');
         const new_balance = balance + add_money;
         document.getElementById ('account_balance').innerText = new_balance.toFixed(2);
-        alert(`Successfully added ${add_money} to your account!`);
+        alert(`Successfully added ${add_money} TK. to your account!`);
 
         const p = document.createElement('p');
         p.innerText = `Added: ${add_money} TK. New Balance: ${new_balance}`;
         document.getElementById ('transection_container').appendChild(p);
-        
+
     }
     else {
         alert ('wrong your pin number, please try again');
